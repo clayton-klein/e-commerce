@@ -1,0 +1,32 @@
+.banner__box {
+    background-image: url(../images/toad-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-base);
+    gap: 2rem;
+    height: 352px;
+    justify-content: flex-end;
+    padding: 9.5rem 9.5rem 2rem 9.5rem;
+    width: 100%;
+}
+
+.banner__box__title {
+    font-size: 3.25rem;
+}
+
+.banner__box__subtitle {
+    font-size: 1.4rem;
+}
+
+.banner__box__btn {
+    background-color: var(--azul);
+    border: none;
+    color: white;
+    font-family: inherit;
+    padding: 1rem;
+    width: 8.125rem;
+}
