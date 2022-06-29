@@ -1,0 +1,78 @@
+.footer__sup {
+  align-items: flex-start;
+  background-color: var(--azul-claro);
+  display: flex;
+  font-family: var(--font-base);
+  justify-content: space-between;
+  padding: 4rem 9.5rem;
+}
+
+.footer__sup__links-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__sup__link {
+  color: var(--cinza-medio);
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+
+.footer__sup__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.footer__sup__form-title {
+  font-weight: 700;
+}
+
+.form__sup__name {
+  background-color: white;
+  border-bottom: 2px solid #a2a2a2;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  padding: 8px 12px;
+}
+
+.footer__sup__name-label {
+  color: #a2a2a2;
+  font-size: 0.75rem;
+}
+
+.footer__sup__name-input {
+  border: none;
+}
+
+.footer__sup__name-input:focus {
+  outline: none;
+}
+
+.footer__sup__textarea {
+  border: none;
+  border-bottom: 2px solid #a2a2a2;
+  font-family: inherit;
+  height: 10.5vh;
+  margin-top: 8px;
+  outline: none;
+  padding: 16px 12px;
+}
+
+.footer__sup__btn {
+  background-color: var(--azul);
+  border: none;
+  color: white;
+  font-family: inherit;
+  margin-top: 0.5rem;
+  padding: 16px;
+  width: 165px;
+}
+
+.footer__sub {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+}

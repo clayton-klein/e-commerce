@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/star-wars-section.css">
     <link rel="stylesheet" href="assets/css/consoles-section.css">
     <link rel="stylesheet" href="assets/css/miscellaneous-section.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <title>Alura Geek</title>
   </head>
   <body>
@@ -177,22 +178,27 @@
           </div>
         </section>
         <footer>
-          <a href="#" class="footer__logo"><img src="assets/images/logo.svg" alt=""></a>
-          <div class="footer__links__box">
-            <a href="#">Quem somos nós</a>
-            <a href="#">Política de privacidade</a>
-            <a href="#">Programa de fidelidade</a>
-            <a href="#">Nossas Lojas</a>
-            <a href="#">Quero ser um franqueado</a>
-            <a href="#">Anuncie aqui</a>
+          <div class="footer__sup">
+            <a href="#" class="footer__sup__logo"><img src="assets/images/logo.svg" alt=""></a>
+            <div class="footer__sup__links-box">
+              <a href="#" class="footer__sup__link">Quem somos nós</a>
+              <a href="#" class="footer__sup__link">Política de privacidade</a>
+              <a href="#" class="footer__sup__link">Programa de fidelidade</a>
+              <a href="#" class="footer__sup__link">Nossas Lojas</a>
+              <a href="#" class="footer__sup__link">Quero ser um franqueado</a>
+              <a href="#" class="footer__sup__link">Anuncie aqui</a>
+            </div>
+            <form action="#" class="footer__sup__form">
+              <p class="footer__sup__form-title">Fale conosco</p>
+              <div class="form__sup__name">
+                <label for="name-input" class="footer__sup__name-label">Nome</label>
+                <input type="text" id="name-input" class="footer__sup__name-input">
+              </div>
+              <textarea placeholder="Escreva sua mensagem" name="msg" id="msg" cols="30" rows="10" class="footer__sup__textarea"></textarea>
+              <button class="footer__sup__btn">Enviar mensagem</button>
+            </form>
           </div>
-          <form action="#">
-            <label for="name-input">Nome</label>
-            <input type="text" id="name-input">
-            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-            <button>Enviar mensagem</button>
-          </form>
-          <div class="dev__box">
+          <div class="footer__sub">
             <p>Desenvolvido por <strong class="dev__box__name">Clayton Klein</strong></p>
             <p>2022</p>
           </div>
