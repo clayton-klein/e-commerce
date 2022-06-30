@@ -30,7 +30,7 @@
 
 .form__sup__name {
   background-color: white;
-  border-bottom: 2px solid #a2a2a2;
+  border-bottom: 1px solid #a2a2a2;
   display: flex;
   flex-direction: column;
   margin: 8px 0;
@@ -52,7 +52,7 @@
 
 .footer__sup__textarea {
   border: none;
-  border-bottom: 2px solid #a2a2a2;
+  border-bottom: 1px solid #a2a2a2;
   font-family: inherit;
   height: 10.5vh;
   margin-top: 8px;
