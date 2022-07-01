@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/add-product.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <title>Adiconar Novo Produto</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <title>Adicionar Novo Produto</title>
   </head>
   <body>
     <div class="container">
       <header>
         <div class="header__left">
           <h1>
-            <a href="#"
+            <a href="../../index.html "
               ><img
                 src="../images/logo.svg"
                 alt="logo alura geek"
@@ -44,17 +45,32 @@
         </div>
         <button class="header__btn">Menu administrador</button>
       </header>
-      <section class="login">
-        <form action="" class="login__form">
-          <h2 class="login__form__title">Adicionar Novo Produto</h2>
-          <input class="login__form__email" type="email" placeholder="Escreva seu email"/>
-          <input class="login__form__password" type="password" placeholder="Escreva sua senha"/>
-          <button class="login__form__btn">Adicionar produto</button>
+      <section class="add-product">
+        <form action="" class="add-product__form">
+          <h2 class="add-product__form__title">Adicionar Novo Produto</h2>
+          <div class="add-product__form__input-box">
+            <label for="url-input" class="add-product__form__url-label">URL da imagem</label>
+            <input type="text" id="url-input" class="add-product__form__url-input">
+          </div>
+          <div class="add-product__form__input-box">
+            <label for="category-input" class="add-product__form__category-label">Categoria</label>
+            <input type="text" id="category-input" class="add-product__form__category-input">
+          </div>
+          <div class="add-product__form__input-box">
+            <label for="name-input" class="add-product__form__name-label">Nome do produto</label>
+            <input type="text" id="name-input" class="add-product__form__name-input">
+          </div>
+          <div class="add-product__form__input-box">
+            <label for="price-input" class="add-product__form__price-label">Preço do produto</label>
+            <input type="text" id="price-input" class="add-product__form__price-input">
+          </div>
+          <textarea class="add-product__form__description" name="" id="" cols="30" rows="10" placeholder="Descrição do produto"></textarea>
+          <button class="add-product__form__btn">Adicionar produto</button>
         </form>
       </section>
       <footer>
         <div class="footer__sup">
-          <a href="#" class="footer__sup__logo"
+          <a href="../../index.html" class="footer__sup__logo"
             ><img src="../images/logo.svg" alt=""
           /></a>
           <div class="footer__sup__links-box">

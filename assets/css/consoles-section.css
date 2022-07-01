@@ -21,6 +21,12 @@
     gap: 0.5rem;
 }
 
+.see-all__link {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
 .see-all__text {
     color: var(--azul);
     font-weight: 700;
