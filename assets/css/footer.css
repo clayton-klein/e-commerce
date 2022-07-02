@@ -81,15 +81,62 @@
 
 /* TABLET */
 @media (max-width: 768px) {
+  /* AJUSTAR FOOTER SUP NO TABLET */
   .footer__sup {
+    /* flex-direction: column; */
     padding: 2rem;
   }
 
-  .footer__sup__logo {
-    display: inline-block;
-  }
-
   .footer__sup__form {
+    /* align-self: flex-end; */
+    justify-content: center;
     width: 62%;
   }
 }
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+  .footer__sup {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer__sup--left {
+    flex-direction: column;
+  }
+
+  .footer__sup__logo {
+    margin-bottom: 1rem;
+  }
+
+  .footer__sup__link {
+    margin-bottom: 1rem;
+  }
+
+  .footer__sup__form {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .footer__sup__form-title {
+    align-self: flex-start;
+  }
+
+  .footer__sup__name-label {
+    align-self: flex-start;
+  }
+
+  .footer__sup__textarea {
+    height: 82px;
+  }
+
+  .footer__sup__btn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 16px;
+  }
+}
+

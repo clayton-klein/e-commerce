@@ -73,3 +73,44 @@
         display: none;   
     }
 }
+
+/* SMARTPHONE */
+
+@media (max-width: 480px) {
+    .miscellaneous__box {
+      padding: 1rem 1rem;
+    }
+  
+    .miscellaneous__box__heading {
+      margin-top: 0;
+    }
+  
+    .miscellaneous__box__title {
+      font-size: 22px;
+    }
+  
+    .miscellaneous__box__cards {
+      flex-wrap: wrap;
+    }
+  
+    .miscellaneous__card__img {
+      width: 156px;
+    }
+  
+    .see-all__link {
+      display: flex;
+      gap: 4px;
+    }
+  
+    .see-all__text {
+      font-size: 14px;
+    }
+  
+    .see-all__img {
+      width: 16px;
+    }
+  
+    .miscellaneous__card__details {
+      font-size: 14px;
+    }
+  }

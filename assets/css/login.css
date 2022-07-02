@@ -1,5 +1,5 @@
 .login {
-    background-color: #e5e5e5;
+    background-color: var(--cinza-claro);
     font-family: var(--font-base);
     padding: 91px 0;
 }
@@ -39,3 +39,37 @@
     padding: 20.5px;
     width: 423px;
 }
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .login {
+        padding: 32px;
+    }
+
+    .login__form {
+        padding: 1rem 0 2rem 0;
+    }
+
+    .login__form__title {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .login__form input {
+        padding: 8px 12px 13px 12px;
+        width: 275px;
+    }
+
+    .login__form__btn {
+        font-size: 14px;
+        padding: 12px 34px;
+        width: 109px;
+    }
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+    
+}   

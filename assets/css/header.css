@@ -8,6 +8,7 @@ header {
 
 .header__left {
     display: flex; 
+    align-items: center;
 }
 
 .header__search-box {
@@ -19,7 +20,7 @@ header {
     gap: 8px;
     justify-content: space-between;
     margin-left: 2rem;
-    padding: 0px 16px;
+    padding: 8px 16px;
     width: 29vw;
 }
 
@@ -36,10 +37,15 @@ header {
 
 .header__btn {
     background-color: white;
-    border-color: var(--azul);
+    border: 1px solid var(--azul);
     color: var(--azul);
-        font-family: var(--font-base);
+    font-family: var(--font-base);
+    font-weight: 600;
     padding: 16px 70px;
+}
+
+.header__search-icon--mobile {
+    display: none;
 }
 
 /* RESPONSIVIDADE */
@@ -49,6 +55,22 @@ header {
     header {
         padding: 1rem 2rem;
     }
+
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__search-box {
+        padding: 0.5rem 1rem;
+        width: 272px;
+    }
+
+    .header__btn {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px 64px;
+    }
+
 }
 
 /* SMARTPHONE */
@@ -63,29 +85,26 @@ header {
         width: 100px;
     }
 
-    .header__search-box__text-input {
-        display: none;
-    }
-
-    .header__left a {
-        margin: 0;
-        padding: 0;
+    .header__search-box__lupa {
+        order: -1;
     }
 
     .header__search-box {
-        background-color: white;
-        margin: 0;
-        padding: 0;
+        display: none;
     }
 
-    .header__btn__link {
-        display: flex;
-        order: 2;
-
+    .header__search-box {
+        margin: 0;
+        padding: 0;
+        background-color: white;
     }
 
     .header__btn {
         font-size: 14px;
         padding: 12px 47px;
+    }
+
+    .header__search-icon--mobile {
+        display: flex;
     }
 }
