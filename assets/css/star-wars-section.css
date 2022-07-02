@@ -62,3 +62,20 @@
     margin-top: 0.5rem;
     text-decoration: none;
 }
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .star-wars__box {
+        padding: 2rem;
+    }
+
+    .baby-yoda {
+        display: none;
+    }
+
+    .sith-costume {
+        display: none;   
+    }
+}

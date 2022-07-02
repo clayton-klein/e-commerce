@@ -62,3 +62,20 @@
     margin-top: 0.5rem;
     text-decoration: none;
 }
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .console__box {
+        padding: 2rem;
+    }
+
+    .xbox {
+        display: none;
+    }
+
+    .game-boy {
+        display: none;   
+    }
+}

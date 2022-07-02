@@ -56,3 +56,20 @@
     margin-top: 0.5rem;
     text-decoration: none;
 }
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .miscellaneous__box {
+        padding: 2rem;
+    }
+
+    .vr-goggles {
+        display: none;
+    }
+
+    .pikachu-costume {
+        display: none;   
+    }
+}

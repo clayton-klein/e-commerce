@@ -41,3 +41,51 @@ header {
         font-family: var(--font-base);
     padding: 16px 70px;
 }
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__search-box__text-input {
+        display: none;
+    }
+
+    .header__left a {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__search-box {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__btn__link {
+        display: flex;
+        order: 2;
+
+    }
+
+    .header__btn {
+        font-size: 14px;
+        padding: 12px 47px;
+    }
+}

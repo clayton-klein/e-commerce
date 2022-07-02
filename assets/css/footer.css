@@ -76,3 +76,20 @@
   padding: 2rem 0;
   text-align: center;
 }
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+  .footer__sup {
+    padding: 2rem;
+  }
+
+  .footer__sup__logo {
+    display: inline-block;
+  }
+
+  .footer__sup__form {
+    width: 62%;
+  }
+}

@@ -30,3 +30,12 @@
     padding: 1rem;
     width: 8.125rem;
 }
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .banner__box {
+        padding: 9.5rem 2rem 2rem 2rem;
+    }
+}
