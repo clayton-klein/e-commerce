@@ -25,6 +25,7 @@
 }
 
 .footer__sup__form-title {
+  color: var(--cinza-medio);
   font-weight: 700;
 }
 
@@ -83,14 +84,16 @@
 @media (max-width: 768px) {
   /* AJUSTAR FOOTER SUP NO TABLET */
   .footer__sup {
-    /* flex-direction: column; */
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
     padding: 2rem;
   }
 
   .footer__sup__form {
-    /* align-self: flex-end; */
-    justify-content: center;
-    width: 62%;
+    width: 434px;
+    grid-column: 2/3;
+    grid-row: 1/3;
   }
 }
 
