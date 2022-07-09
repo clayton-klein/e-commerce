@@ -1,5 +1,10 @@
+.header__btn {
+  font-size: 0.9rem;
+  padding: 12px 16px;
+}
+
 .add-product {
-  background-color: #e5e5e5;
+  background-color: var(--cinza-claro);
   font-family: var(--font-base);
   padding: 64px 0;
 }
@@ -63,4 +68,33 @@
   font-weight: 400;
   padding: 20.5px;
   width: 559px;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+  .add-product {
+    padding: 2rem;
+  }
+
+  .add-product__form__title {
+    font-size: 22px;
+  }
+  
+  .add-product__form__input-box, .add-product__form__description, .add-product__form__btn {
+    width: 100%;
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 768px) {
+  .add-product {
+    padding: 1rem;
+  }
+
+  .add-product__form__title {
+    display: inline-block;
+    width: 100%;
+  }
 }
