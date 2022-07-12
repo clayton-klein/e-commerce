@@ -26,6 +26,7 @@ main,
   background-color: var(--azul);
   border: none;
   color: white;
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
   padding: 1rem;
@@ -34,17 +35,27 @@ main,
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 4rem
+  column-gap: 1rem;
+  row-gap: 4rem;
 }
 
-.products img {
+
+.products__card__img {
   width: 100%;
 }
 
 .products__card {
-  min-width: 140px;
-  max-width: 165px;
+  max-width: 163.5px;
+  position: relative;
+}
+
+.products__card__icons {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  right: 48px;
+  top: 8px;
+  width: 24px;
 }
 
 .products__title {
@@ -52,15 +63,55 @@ main,
   font-weight: 500;
   margin-top: 0.5rem;
 }
- .products__price {
+.products__price {
   font-size: 1rem;
   font-weight: 700;
   margin-top: 0.5rem;
- }
+}
 
- .products__code {
+.products__code {
   font-size: 14px;
   font-weight: 500;
   margin-top: 0.5rem;
- }
- 
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+
+  .top h2 {
+    font-size: 22px;
+  }
+
+  .top button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 16px;
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+  main {
+    padding: 2rem;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .products__card__img {
+    width: 140px;
+    height: 174px;
+  }
+
+  .products__title {
+    font-size: 13.5px;
+  }
+}
