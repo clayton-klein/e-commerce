@@ -45,6 +45,7 @@
 
 .footer__sup__name-input {
   border: none;
+  font-family: inherit;
 }
 
 .footer__sup__name-input:focus {
@@ -71,11 +72,26 @@
   width: 165px;
 }
 
+.footer__sup__btn:disabled {
+  opacity: 60%;
+}
+
 .footer__sub {
   font-family: var(--font-base);
   font-size: 1rem;
   padding: 2rem 0;
   text-align: center;
+}
+
+.footer__sup__name-input__error-msg, .footer__sup__textarea__error-msg {
+  color: red;
+  display: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer__sup__name-input__error-msg {
+  margin-top: -8px;
 }
 
 /* RESPONSIVIDADE */

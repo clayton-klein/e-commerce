@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/banner.css">
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/consoles-section.css">
     <link rel="stylesheet" href="assets/css/miscellaneous-section.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <script defer src="./assets/js/footer-validation.js"></script>
     <title>Alura Geek</title>
   </head>
   <body>
@@ -200,10 +201,12 @@
               <p class="footer__sup__form-title">Fale conosco</p>
               <div class="form__sup__name">
                 <label for="name-input" class="footer__sup__name-label">Nome</label>
-                <input type="text" id="name-input" class="footer__sup__name-input">
+                <input type="text" id="name-input" class="footer__sup__name-input" pattern="[A-Za-z\s]{2,40}" required>
               </div>  
-              <textarea placeholder="Escreva sua mensagem" name="msg" id="msg" cols="30" rows="10" class="footer__sup__textarea"></textarea>
-              <button class="footer__sup__btn">Enviar mensagem</button>
+              <span class="footer__sup__name-input__error-msg" id="name-error">Este campo deve ser preenchido e conter no máximo 40 caracteres</span>
+              <textarea placeholder="Escreva sua mensagem" name="msg" id="msg" cols="30" rows="10" class="footer__sup__textarea" minlength="2" maxlength="120" required></textarea>
+              <span class="footer__sup__textarea__error-msg" id="ta-error-msg">Este campo deve ser preenchido e conter no máximo 120 caracteres</span>
+              <button class="footer__sup__btn" id="footer-sup-btn" disabled>Enviar mensagem</button>
             </form>
             </div>
           </section>
