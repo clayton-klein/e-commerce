@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/login.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <script defer src="../js/login-validation.js"></script>
     <script defer src="../js/footer-validation.js"></script>
     <title>Sessão Login</title>
   </head>
@@ -53,18 +54,22 @@
           <h2 class="login__form__title">Iniciar Sessão</h2>
           <input
             class="login__form__email"
+            id="email-input"
             type="email"
             placeholder="Escreva seu email"
             pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
             required
           />
+          <span class="login__form__error-msg" data-invalid-msg="email">Por favor, preencha este campo com um e-mail válido.</span>
           <input
             class="login__form__password"
+            id="password-input"
             type="password"
             placeholder="Escreva sua senha"
             required
           />
-          <button class="login__form__btn">Entrar</button>
+          <span class="login__form__error-msg" data-invalid-msg="password">Por favor, preencha este campo com uma senha válida.</span>
+          <button class="login__form__btn" id="login-form-btn" disabled>Entrar</button>
         </form>
       </section>
       <footer>
