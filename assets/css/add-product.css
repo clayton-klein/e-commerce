@@ -17,6 +17,7 @@
 }
 
 .add-product__form__title {
+  text-align: center;
   color: var(--cinza-medio);
   font-size: 32px;
   font-weight: 700;
@@ -31,6 +32,18 @@
   margin: 0px;
   padding: 8px 12px;
   width: 559px;
+}
+
+.error-msg {
+  color: red;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: -14px;
+}
+
+.add-product__form__img-inputs--error-msg, .add-product__form__category--error-msg, .add-product__form__name-input--error-msg, .add-product__form__price-input--error-msg, .add-product__form__description--error-msg {
+  display: none;
 }
 
 .add-product__form__img {
