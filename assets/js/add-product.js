@@ -81,3 +81,16 @@ productDescription.addEventListener("blur", () => {
     productDescriptionErrorMsg.style.display = "none";
   }
 });
+
+//habilita botão de envio caso todos os campos estejam corretamente preenchidos
+document.addEventListener('input', () => {
+  if( (urlInput.validity.valid || fileInput.validity.valid) && 
+      categoryInput.validity.valid && 
+      productNameInput.validity.valid && 
+      priceInput.validity.valid && 
+      productDescription.validity.valid) {
+    formBtn.removeAttribute('disabled');
+  } else {
+    formBtn.setAttribute('disabled', 'disabled');
+  }
+});

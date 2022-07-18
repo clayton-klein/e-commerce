@@ -1,7 +1,7 @@
-# e-commerce
+# E-commerce
  Segundo desafio de Front-End do programa ONE (Oracle Next Education)
 
-Criar o site e o e-commerce deve conter os seguintes requisitos: 
+O e-commerce deve conter os seguintes requisitos: 
 - Uma página inicial que contenha um botão "iniciar sessão" e um buscador de produtos oferecidos pela empresa.
 - Um banner que contenha descontos, promoções, ou informações relevantes do momento.
 - Uma galeria com as informações dos produtos como: a imagem, o nome do produto, o preço e um link que leva até a página de descrição do produto.
