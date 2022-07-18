@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/add-product.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <script defer src="../js/add-product.js"></script>
     <script defer src="../js/footer-validation.js"></script>
     <title>Adicionar Novo Produto</title>
   </head>
@@ -39,7 +40,7 @@
             <a href="#"
               ><img
                 src="../images/lupa.svg"
-                alt=""
+                alt="lupa de busca"
                 class="header__search-box__lupa"
             /></a>
           </div>
@@ -52,15 +53,22 @@
       <section class="add-product">
         <form action="" class="add-product__form">
           <h2 class="add-product__form__title">Adicionar Novo Produto</h2>
-          <div class="add-product__form__input-box">
-            <label for="url-input" class="add-product__form__url-label"
-              >URL da imagem</label
-            >
-            <input
-              type="text"
-              id="url-input"
-              class="add-product__form__url-input"
-            />
+          <img src="../images/img-preview-icon.png" alt="Product preview" id="product-img" class="add-product__form__img">
+          <div class="add-product__form__img-inputs">
+            <div class="add-product__form__input-box">
+              <label for="url-input" class="add-product__form__url-label"
+                >URL da imagem</label
+              >
+              <input
+                type="url"
+                id="url-input"
+                class="add-product__form__url-input"
+                required
+              />
+            </div>
+            <p>Ou</p>
+            <label for="file-input" class="add-product__form__file-label">Procure no seu aparelho</label>
+            <input type="file" accept="image/jpeg, image/png" id="file-input" class="add-product__form__file-input">
           </div>
           <div class="add-product__form__input-box">
             <label
@@ -72,16 +80,19 @@
               type="text"
               id="category-input"
               class="add-product__form__category-input"
+              required
             />
           </div>
           <div class="add-product__form__input-box">
-            <label for="name-input" class="add-product__form__name-label"
+            <label for="product-name-input" class="add-product__form__name-label"
               >Nome do produto</label
             >
             <input
               type="text"
               id="product-name-input"
               class="add-product__form__name-input"
+              maxlength="20"
+              required
             />
           </div>
           <div class="add-product__form__input-box">
@@ -89,20 +100,21 @@
               >Preço do produto</label
             >
             <input
-              type="text"
+              type="number"
               id="price-input"
               class="add-product__form__price-input"
+              required
             />
           </div>
           <textarea
             class="add-product__form__description"
-            name=""
-            id=""
             cols="30"
             rows="10"
+            maxlength="150"
             placeholder="Descrição do produto"
+            required
           ></textarea>
-          <button class="add-product__form__btn">Adicionar produto</button>
+          <button class="add-product__form__btn" disabled>Adicionar produto</button>
         </form>
       </section>
       <footer>

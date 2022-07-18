@@ -33,6 +33,38 @@
   width: 559px;
 }
 
+.add-product__form__img {
+  border: 2px dashed var(--azul);
+  height: 176px;
+  margin: 8px;
+  width: 176px;
+}
+
+.add-product__form__img-inputs {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 559px;
+}
+
+.add-product__form__file-label {
+  color: var(--azul);
+  border: 1px solid var(--azul);
+  font-family: inherit;
+  padding: 19px 16px;
+  text-align: center;
+  width: 75%;
+}
+
+.add-product__form__file-label:hover {
+  cursor: pointer;
+}
+
+.add-product__form__file-input {
+  display: none;
+}
+
 .add-product__form__input-box label {
   color: #a2a2a2;
   font-size: 0.75rem;
@@ -70,6 +102,10 @@
   width: 559px;
 }
 
+.add-product__form__btn:disabled {
+  opacity: 60%;
+}
+
 /* RESPONSIVIDADE */
 
 /* TABLET */
@@ -81,9 +117,18 @@
   .add-product__form__title {
     font-size: 22px;
   }
-  
-  .add-product__form__input-box, .add-product__form__description, .add-product__form__btn {
+
+  .add-product__form__input-box,
+  .add-product__form__description,
+  .add-product__form__btn,
+  .add-product__form__img-inputs,
+  .add-product__form__img-inputs label {
     width: 100%;
+  }
+
+  .add-product__form__img-inputs {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
