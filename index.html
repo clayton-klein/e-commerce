@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="assets/css/consoles-section.css">
     <link rel="stylesheet" href="assets/css/miscellaneous-section.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <script defer src="./assets/js/footer-validation.js"></script>
+    <script defer src="assets/js/search-bar.js"></script>
+    <script defer src="assets/js/footer-validation.js"></script>
     <title>Alura Geek</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
           <div class="header__left">
             <h1><a href="#"><img src="assets/images/logo.svg" alt="logo alura geek" class="header__logo"></a></h1>
             <div class="header__search-box">
-              <input type="text" class="header__search-box__text-input" placeholder="O que deseja encontrar?">
+              <input type="search" class="header__search-box__text-input" data-search-input placeholder="O que deseja encontrar?">
               <a href="#"><img src="assets/images/lupa.svg" alt="" class="header__search-box__lupa"></a>
             </div>
           </div>
@@ -39,7 +40,7 @@
           <h3 class="banner__box__subtitle">Produtos selecionados com 33% de desconto</h3>
           <a href="#console__box"><button class="banner__box__btn">Ver Consoles</button></a>
         </section>
-        <section class="star-wars__box">
+        <section class="star-wars__box" data-product-section>
           <div class="star-wars__box__heading">
             <h3 class="star-wars__box__title">Star Wars</h3>
             <div class="see-all__box">
@@ -88,7 +89,7 @@
             </div>
           </div>
         </section>
-        <section class="console__box" id="console__box">
+        <section class="console__box" id="console__box" data-product-section>
           <div class="console__box__heading">
             <h3 class="console__box__title">Consoles</h3>
             <div class="see-all__box">
@@ -137,7 +138,7 @@
             </div>
           </div>
         </section>
-        <section class="miscellaneous__box">
+        <section class="miscellaneous__box" data-product-section>
           <div class="miscellaneous__box__heading">
             <h3 class="miscellaneous__box__title">Diversos</h3>
             <div class="see-all__box">
