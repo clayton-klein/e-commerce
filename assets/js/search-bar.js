@@ -17,11 +17,12 @@ searchBar.addEventListener("input", () => {
     }
   });
 
-  productsSections.forEach((section) => {
-    if (section.children.length < 3) {
-      section.classList.add("hide");
-    } else {
-      section.classList.remove("hide");
-    }
-  });
+  // ***DESENVOLVER FUNCIONALIDADE PARA OCULTAR AS SEÇÕES***
+  // productsSections.forEach((section) => {
+  //   if (section.children.length < 3) {
+  //     section.classList.add("hide");
+  //   } else {
+  //     section.classList.remove("hide");
+  //   }
+  // });
 });
