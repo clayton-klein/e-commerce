@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "projeto e-commerce ONE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clayton-klein/e-commerce.git"
+  },
+  "author": "Clayton Klein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clayton-klein/e-commerce/issues"
+  },
+  "homepage": "https://github.com/clayton-klein/e-commerce#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

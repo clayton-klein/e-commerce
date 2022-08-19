@@ -94,3 +94,8 @@ document.addEventListener('input', () => {
     formBtn.setAttribute('disabled', 'disabled');
   }
 });
+
+//add produto
+formBtn.addEventListener('click', () => {
+  
+})
