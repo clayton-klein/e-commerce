@@ -1,3 +1,8 @@
+**Status: em desenvolvimento (falta finalizar as operações CRUD para novos itens na loja.**
+<br>
+<br>
+<br>
+
 # E-commerce
  Segundo desafio de Front-End do programa ONE (Oracle Next Education)
 
